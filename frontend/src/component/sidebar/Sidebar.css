@@ -1,12 +1,12 @@
 .sidebar{
     max-width: 280px;
     height: calc(100vh - 67.5px);
-    border-right: .0625rem solid rgb(218, 220, 224);
+    border-right: 1px solid rgb(218, 220, 224);
 }
 
 .sidebar-sec{
     padding: 8px 0px;
-    border-bottom: .0625rem solid rgb(218, 220, 224);
+    border-bottom: 1px solid rgb(218, 220, 224);
 }
 
 .tab{
