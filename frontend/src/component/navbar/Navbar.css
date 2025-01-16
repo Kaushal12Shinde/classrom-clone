@@ -16,6 +16,7 @@
     align-items: center;
     border: none;
     background-color: #fff;
+    cursor: pointer;
 }
 
 .nav-logo{

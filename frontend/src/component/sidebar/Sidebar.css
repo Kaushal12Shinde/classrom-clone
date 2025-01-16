@@ -1,7 +1,16 @@
 .sidebar{
-    max-width: 280px;
+    width: 280px;
     height: calc(100vh - 67.5px);
     border-right: 1px solid rgb(218, 220, 224);
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.active{
+    transform: translateX(0);
+}
+
+.sidebar.deactive{
+    transform: translateX(-100%);
 }
 
 .sidebar-sec{
@@ -53,7 +62,7 @@
 .class-subject{
     margin: 0;
     color: #5f6368;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
 }
 
 .class-div{
