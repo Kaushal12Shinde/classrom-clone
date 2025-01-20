@@ -3,6 +3,8 @@ import './App.css'
 import Navbar from './component/navbar/Navbar'
 import Sidebar from './component/sidebar/Sidebar'
 import ClassCard from './component/class/ClassCard';
+// import JoinClass from './component/class/JoinClass';
+// import CreateClass from './component/class/CreateClass';
 
 function App() {
 
@@ -21,6 +23,8 @@ function App() {
           <ClassCard/>
       </div>
      </div>
+     {/* <CreateClass/> */}
+     {/* <JoinClass/> */}
     </>
   )
 }

@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Noto Sans", serif;
   font-size: 8px;
+  position: relative;
 }
  @media (max-width: 768px) {
   *{

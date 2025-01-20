@@ -1,0 +1,218 @@
+.class-card{
+    width: 300px;
+    aspect-ratio: 1/1;
+    border: .0625rem solid #dadce0;
+    border-radius: 10px;
+    flex-shrink: 0;
+    height: 300px; 
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.class-card:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.class-card--details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px 20px;
+    width: 100%;
+    background-image: url(https://gstatic.com/classroom/themes/img_reachout.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; /* Enables positioning for pseudo-elements and content */
+    color: white; /* Ensures text is readable over the gradient */
+}
+
+.class-card--details::after {
+    content: '';
+    position: absolute;
+    background: linear-gradient(60deg, rgba(32, 33, 36, 0) 60%, rgba(32, 33, 36, 0.88));
+    opacity: 0.88; /* Adjust for better gradient visibility */
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1; /* Places gradient above the background image but below content */
+}
+  
+.details {
+    position: relative; /* Places content above the gradient */
+    z-index: 2; /* Ensures content appears above the gradient */
+}
+.details--name{
+    font-size: 2.3rem;
+    color: white;
+    font-weight: 500;
+}
+
+.details--section{
+    font-size: 1.8rem;
+}
+
+.details--ta{
+    margin-top: 0.6rem;
+    font-size: 1.4rem;
+}
+
+.class-card button{
+    background: none;
+    border: none;
+    background-color: transparent;
+    z-index: 2;
+}
+
+.class-card--shortcuts{
+    margin-top: auto;
+    padding: 12px 16px;
+    border-top: .0625rem solid #dadce0;
+}
+.class-card--shortcuts button{
+    float: right;
+}
+
+
+
+.popup{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(32, 33, 36, .6);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-class{
+    max-width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.create-class h2{
+    font-size: 2rem;
+    color: #5f6368;
+}
+
+.create-class--form{
+    margin-top: 20px;
+}
+
+.create-class--form input{
+    border: none;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 14px 10px;
+    background-color: rgb(241, 243, 244);
+    color: black;
+    border-bottom: 1.5px solid #4f4f4f;
+    margin-bottom: 16px;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.create-class--form input[type=text]:focus{
+    outline: none;
+    border-bottom: 1.5px solid #1A73e8;
+}
+
+.create-class--form-actions button{
+    background-color: #fff;
+    border: none;
+    color: #1A73e8;
+    margin: 12px 20px 0 0;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+
+.join-class{
+    max-width: 600px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.join-class h2{
+    font-size: 2rem;
+   
+}
+
+.join-class--container{
+    margin: 18px 0;
+    border: .0625rem solid #dadce0;
+    border-radius: 10px;
+    padding: 12px 18px;
+    color: #5f6368;
+}
+
+.join-class--h{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.join-class--p{
+    font-size: 1.8rem;
+}
+
+.join-class--container form input{
+    border: none;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 14px 10px;
+    background-color: rgb(241, 243, 244);
+    color: black;
+    border-bottom: 1.5px solid #4f4f4f;
+    margin-top: 12px;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.join-class--container form input[type=text]:focus{
+    outline: none;
+    border-bottom: 1.5px solid #1A73e8;
+}
+
+.join-class--instruction{
+    margin-top: 6px;
+    margin-bottom: 16px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.join-class--instruction li{
+    font-size: 1.8rem;
+}
+
+.join-class--form-actions{
+    margin-top: 20px;
+}
+
+.join-class--form-actions button{
+    background-color: #fff;
+    border: none;
+    color: #1A73e8;
+    margin:0 20px 0 0;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+
+.join-class--p a{
+    outline: none;
+    color: #1A73e8;
+    font-size: 1.8rem;
+    text-decoration: underline;
+}

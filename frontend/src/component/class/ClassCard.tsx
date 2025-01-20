@@ -1,4 +1,4 @@
-import './ClassCard.css'
+import './Class.css'
 const ClassCard = () => {
   return (
     <>
