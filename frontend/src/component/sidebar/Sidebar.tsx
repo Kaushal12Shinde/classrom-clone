@@ -61,6 +61,7 @@ const Sidebar:React.FC<SidebarProps> = ({openSidebar}) =>{
               </div>) 
           }
         </div>
+        
         <div className="sidebar-sec">
           <div className='tab tab-accordion' onClick={()=> toggleAccordion('enrolled')} >
             <svg className={`tab-acc-arrow ${accordionState.enrolled ? 'open': ''}`} width="24" height="24" viewBox="0 0 24 24"><path fill='#5f6368' d="M10 17l5-5-5-5v10z"></path></svg>

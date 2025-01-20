@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import './App.css'
 import Navbar from './component/navbar/Navbar'
-import Sidebar from './component/sidebar/sidebar'
+import Sidebar from './component/sidebar/Sidebar'
+import ClassCard from './component/class/ClassCard';
 
 function App() {
 
@@ -14,7 +15,12 @@ function App() {
   return (
     <>
      <Navbar handleSidebar={handleSidebar}/>
-     <Sidebar openSidebar={openSidebar} />
+     <div className='screen'>
+      <Sidebar openSidebar={openSidebar} />
+      <div className='main-screen'>
+          <ClassCard/>
+      </div>
+     </div>
     </>
   )
 }
